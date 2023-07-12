@@ -1,0 +1,15 @@
+- pwd: nos da la ruta del directorio
+- ls: nos dice lo que tenemos en el directorio
+- git init: incia el repertorio de git para el control de versiones
+- git status: como esta actualmente el repositorio
+- git add <doc>: para agregar un documento al git staging area
+- git commit: hacer un commit de lo que esta en el area de staging area
+- m "mensaje" para el commit
+- git log: para ver los commits
+- git checkout: para volver a una version vieja de un codigo (primeros 5 digitos del bash)
+   Puede suceder que nos diga que estamos en el 'Detached Head' (Que es como un puntero al ultimo commit)
+   Para volver a la version actual (el ultimo commit), podemos usar 'master'.
+   Podrias hacer un commit de la nueva version con cambios pero, es mejor volver a la version donde los utlimos cambios no existe
+- git reset: para volver a esa version del hash y se borran los commit. (volvemos a staging area)
+   otro uso del reset, se pueden borrar todos los cambios haciendo un reset --hard, vuelves al commit (sin los cambios, a diferencia del normal que mantiene el codigo).
+   
