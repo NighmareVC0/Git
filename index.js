@@ -19,7 +19,11 @@ const getPosts = async (user) =>
 const getCommentsForEachPost = async (posts) =>
 {
   const res = await Promise.all(posts.map(post =>
+<<<<<<< HEAD
     fetch(`${url}/comments?postId=${post.id}&_limit=3`)
+=======
+    fetch(`${url}/comments?postId=${post.id}&_limit=4`)
+>>>>>>> b060af5db48f0c0be53de15c7c5343fc9d15bdfb
   ))
   const postComments = await Promise.all(res.map(r => r.json()));
 
